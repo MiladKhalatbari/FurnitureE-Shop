@@ -1,10 +1,3 @@
-﻿namespace FurnitureOnlineShop.Application.Models.Identity
-{
-    public class AuthResponse
-    {
-        public string Id { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public string Token { get; set; }
-    }
-}
+﻿namespace FurnitureOnlineShop.Application.Models.Identity;
+
+public record AuthResponse(string Id, string UserName, string Email, string Token);

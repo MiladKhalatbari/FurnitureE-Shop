@@ -57,9 +57,10 @@ builder.Services.AddSwaggerGen(o =>
     o.SwaggerDoc("v1", new OpenApiInfo()
     {
         Version = "v1",
-        Title = "HR Management Api"
+        Title = "Furniture Online Shop Api"
     });
 });
+
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();

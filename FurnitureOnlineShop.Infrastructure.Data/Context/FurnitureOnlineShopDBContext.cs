@@ -6,10 +6,8 @@ namespace FurnitureOnlineShop.Persistence.Context;
 
 public class FurnitureOnlineShopDBContext : DbContext
 {
-    public FurnitureOnlineShopDBContext(DbContextOptions<FurnitureOnlineShopDBContext> options) : base(options)
-    {
+    public FurnitureOnlineShopDBContext(DbContextOptions<FurnitureOnlineShopDBContext> options) : base(options) {}
 
-    }
     public DbSet<Cart> Carts { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<CartItem> CartItems { get; set; }

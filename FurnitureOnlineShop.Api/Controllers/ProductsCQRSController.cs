@@ -15,11 +15,11 @@ namespace FurnitureOnlineShop.Api.Controllers;
 [Route("api/[controller]/[Action]")]
 [ApiController]
 [Authorize]
-public class ProductsController : ControllerBase
+public class ProductsCQRSController : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    public ProductsController(IMediator mediator)
+    public ProductsCQRSController(IMediator mediator)
     {
         _mediator = mediator;
     }
